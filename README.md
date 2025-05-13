@@ -1,9 +1,11 @@
 # panw_pa_rn_meraki_integration
 Python code to automate the creation of the Palo Alto Prisma Accesss remote network integration with Meraki MX devices
 
-Overview
+## Overview
 
 Prisma Access provides a flexible way to effectively secure Cisco Meraki SD-WAN deployments. By delivering security from the cloud and closer to the branch networks, Prisma Access lets you optimize networking and security with the same protections that you have at corporate headquarters.
+
+![image alt text](images/scr01.png)
 
 As with other SD-WAN deployments, you secure the Cisco Meraki SD-WAN by onboarding a remote network using IPSec tunnels between the Cisco Meraki SD-WAN and Prisma Access. Using Prisma Access, you can secure SD-WAN devices at a branch, at a data center, or both. You can onboard a remote network using IPSec tunnels between the Cisco Meraki SD-WAN device and Prisma Access automatically using this scripts. See the product requirements below for eligible devices that support this automation. 
 
