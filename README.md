@@ -21,6 +21,7 @@ Meraki MX provide a legacy SD-WAN and very basic security (like stateful firewal
 2. Cloud-based URL filtering with real-time updates
 3. Data Loss Prevention (DLP)
 4. Zero Trust Network Access (ZTNA)
+
 So, traffic from Meraki MX can be routed to Prisma Access for deep inspection and policy enforcement.
 
 
