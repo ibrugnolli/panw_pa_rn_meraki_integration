@@ -64,4 +64,9 @@ Cisco Meraki
 2) Cisco Meraki devices should be in Appliance or Combined type networks
 3) Cisco Meraki networks that have enabled the VPN Mode in the Site-to-Site VPN configurations
 
+![image alt text](images/scr02.png)
+
+![image alt text](images/scr03.png)
+
+![image alt text](images/scr04.png)
 
