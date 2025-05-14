@@ -1,4 +1,4 @@
-# panw_pa_rn_meraki_integration
+### panw_pa_rn_meraki_integration
 Python code to automate the creation of the Palo Alto Prisma Accesss remote network integration with Meraki MX devices
 
 ## Overview
@@ -9,6 +9,31 @@ Prisma Access provides a flexible way to effectively secure Cisco Meraki SD-WAN 
 
 As with other SD-WAN deployments, you secure the Cisco Meraki SD-WAN by onboarding a remote network using IPSec tunnels between the Cisco Meraki SD-WAN and Prisma Access. Using Prisma Access, you can secure SD-WAN devices at a branch, at a data center, or both. You can onboard a remote network using IPSec tunnels between the Cisco Meraki SD-WAN device and Prisma Access automatically using this scripts. See the product requirements below for eligible devices that support this automation. 
 
+## Why connecting our Meraki devices to PANW Prisma Access
+
+Integrating a Cisco Meraki MX device with Palo Alto Networks Prisma Access can provide a powerful combination of branch-level connectivity with best in class cloud-delivered security. Here’s why organizations might choose to do this:
+
+A) Enhanced Security 
+
+Meraki MX provide a legacy SD-WAN and very basic security (like stateful firewall, content filtering, and IPS). But Prisma Access offers enterprise-grade, next-gen security capabilities, such as:
+
+1. Advanced Threat Prevention (ATP)
+2. Cloud-based URL filtering with real-time updates
+3. Data Loss Prevention (DLP)
+4. Zero Trust Network Access (ZTNA)
+
+B) Cloud-Native Security for Remote and Branch Users
+
+Meraki MX handles local connectivity and routing, but by integrating it with Prisma Access:
+
+1. Remote branches gain access to a consistent cloud-based security layer
+2. You get uniform security policies across distributed sites and mobile users
+
+This centralizes security management and compliance.
+
+
+
+So, traffic from Meraki MX can be routed to Prisma Access for deep inspection and policy enforcement.
 Palo Alto Prisma Access:
 1) Update your Prisma Access to version 2.1 Preferred or a later version.
 2) Migrate remote networks to the aggregate bandwidth model.
@@ -18,4 +43,5 @@ Cisco Meraki
 1) Physical Cisco Meraki (MX or Z) devices with a minimum version of 15.12 in Cisco Meraki Hub or Spoke networks.
 2) Cisco Meraki devices should be in Appliance or Combined type networks
 3) Cisco Meraki networks that have enabled the VPN Mode in the Site-to-Site VPN configurations
+
 
