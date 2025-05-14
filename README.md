@@ -1,4 +1,4 @@
-### panw_pa_rn_meraki_integration
+# panw_pa_rn_meraki_integration
 Python code to automate the creation of the Palo Alto Prisma Accesss remote network integration with Meraki MX devices
 
 ## Overview
@@ -66,8 +66,8 @@ Cisco Meraki
 
 ## How to Use
 
-1. Clone repository with `git clone https://github.com/ibrugnolli/pa_egress_ip_addresses`
-2. Change directory to `pa_egress_ip_addresses`
+1. Clone repository with `git clone https://github.com/ibrugnolli/panw_pa_rn_meraki_integration`
+2. Change directory to `panw_pa_rn_meraki_integration`
 3. Edit `pa_env.py`
 * Update the variable `X_PAN_KEY`, with the Egress Public IP Addresses API Key.
 * Example: `X_PAN_KEY = "_your_api_key__"`
@@ -86,11 +86,12 @@ Cisco Meraki
 
 ![image alt text](images/scr06.png)
 
-* Update the variable `pa_subnets`, with the ipv4 subnets you need to reach in the Prisma Access enviroment.
-* Example: `pa_subnets = ["192.168.255.0/24","10.10.1.0/24","10.11.1.0/24"]`
+* Update the variable `network_tag`, with the Meraki network tag.
+* Example: `network_tag = "Branch01"`
 
 * Update the variable `pa_subnets`, with the ipv4 subnets you need to reach in the Prisma Access enviroment.
 * Example: `pa_subnets = ["192.168.255.0/24","10.10.1.0/24","10.11.1.0/24"]`
+
 
 * Update the variable `pa_service_account_username` and `pa_service_account_password` , with the Prisma Access account service information.
 
@@ -136,4 +137,5 @@ python3 pa_egress_ip.py
 ```
 python3 meraki_vpn_create_pa.py
 ```
+
 
