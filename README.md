@@ -64,9 +64,24 @@ Cisco Meraki
 2) Cisco Meraki devices should be in Appliance or Combined type networks
 3) Cisco Meraki networks that have enabled the VPN Mode in the Site-to-Site VPN configurations
 
+## How to Use
+
+1. Clone repository with `git clone https://github.com/ibrugnolli/pa_egress_ip_addresses`
+2. Change directory to `pa_egress_ip_addresses`
+3. Edit `pa_env.py`
+* Update the variable `X_PAN_KEY`, with the Egress Public IP Addresses API Key.
+* Example: `X_PAN_KEY = "_your_api_key__"`
+![image alt text](images/scr05.png)
+
+* Update the variable `meraki_api_key`, with the Meraki Dashboard API key.
+* Example: `meraki_api_key = "_your_api_key__"`
 ![image alt text](images/scr02.png)
-
 ![image alt text](images/scr03.png)
-
 ![image alt text](images/scr04.png)
+
+* Update the variable `meraki_org_id`, with the Meraki Dashboard Organization ID.
+* Example: `meraki_org_id = "_your_org_id__"`
+![image alt text](images/scr06.png)
+
+
 
