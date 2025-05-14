@@ -1,4 +1,4 @@
-### panw_pa_rn_meraki_integration
+# panw_pa_rn_meraki_integration
 Python code to automate the creation of the Palo Alto Prisma Accesss remote network integration with Meraki MX devices
 
 ## Overview
@@ -86,5 +86,19 @@ Cisco Meraki
 
 ![image alt text](images/scr06.png)
 
+* Update the variable `pa_subnets`, with the ipv4 subnets you need to reach in the Prisma Access enviroment.
+* Example: `pa_subnets = ["192.168.255.0/24","10.10.1.0/24","10.11.1.0/24"]`
+
+* Update the variable `pa_subnets`, with the ipv4 subnets you need to reach in the Prisma Access enviroment.
+* Example: `pa_subnets = ["192.168.255.0/24","10.10.1.0/24","10.11.1.0/24"]`
+
+* Update the variable `pa_service_account_username` and `pa_service_account_password` , with the Prisma Access account service information.
+
+![image alt text](images/scr07.png)
+![image alt text](images/scr08.png)
+
+* Update the variable `pa_tenant_service_group_id` , with the Prisma Access tenant service group ID information.
+
+![image alt text](images/scr09.png)
 
 
