@@ -1,4 +1,4 @@
-# panw_pa_rn_meraki_integration
+### panw_pa_rn_meraki_integration
 Python code to automate the creation of the Palo Alto Prisma Accesss remote network integration with Meraki MX devices
 
 ## Overview
@@ -101,4 +101,39 @@ Cisco Meraki
 
 ![image alt text](images/scr09.png)
 
+* Update informations regarding the IKE parameters, including `ike_gw_name` , `ike_secret`, `remote_branch_fqdn_id`, `prisma_access_fqdn_id`
+
+* Update information regarding the IPSEC parameter `ipsec_tunnel_name`.
+
+* Update informations regarding the Remote Network parameters, including `rn_name` , `rn_subnets`, `rn_region`, `rn_spn_name`
+
+4. Run the script to create the IKE Gateway:
+```
+python3 pa_create_ikegw.py
+```
+
+5. Run the script to create the IPSEC Tunnel:
+```
+python3 pa_create_ipsec_tunnel.py
+```
+
+5. Run the script to create the Remote Network:
+```
+python3 pa_create_rn.py
+```
+
+6. Run the script to push the configuration:
+```
+python3 pa_push_rn_verify.py
+```
+
+7. Run the script retrieve the egrees Public IP Address:
+```
+python3 pa_egress_ip.py
+```
+
+8. Run the script to configure the Meraki MX:
+```
+python3 meraki_vpn_create_pa.py
+```
 
