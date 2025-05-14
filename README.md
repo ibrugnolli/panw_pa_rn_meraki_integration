@@ -15,12 +15,14 @@ Integrating a Cisco Meraki MX device with Palo Alto Networks Prisma Access can p
 
 A) Enhanced Security 
 
-Meraki MX provide a legacy SD-WAN and very basic security (like stateful firewall, content filtering, and IPS). But Prisma Access offers enterprise-grade, next-gen security capabilities, such as:
+Meraki MX provide a legacy SD-WAN and very basic security (like stateful firewall, content filtering, and IPS). But Prisma Access offers best in class, enterprise-grade, next-gen security capabilities, such as:
 
 1. Advanced Threat Prevention (ATP)
 2. Cloud-based URL filtering with real-time updates
 3. Data Loss Prevention (DLP)
 4. Zero Trust Network Access (ZTNA)
+So, traffic from Meraki MX can be routed to Prisma Access for deep inspection and policy enforcement.
+
 
 B) Cloud-Native Security for Remote and Branch Users
 
@@ -28,12 +30,29 @@ Meraki MX handles local connectivity and routing, but by integrating it with Pri
 
 1. Remote branches gain access to a consistent cloud-based security layer
 2. You get uniform security policies across distributed sites and mobile users
-
 This centralizes security management and compliance.
 
+C) Scalability and Flexibility
+Prisma Access is built for scale — it's hosted in the cloud, so:
+1. There's no need to deploy hardware firewalls at every site
+2. You can easily onboard new branches using Meraki MX and point them to Prisma Access
+3. It supports dynamic scaling as your traffic or user base grows
 
+D) Hybrid and Secure SD-WAN
+Meraki MX can still establish SD-WAN tunnels to multiple destinations and include VPN tunnels to no Meraki peers, like Prisma Access. You can configure:
 
-So, traffic from Meraki MX can be routed to Prisma Access for deep inspection and policy enforcement.
+IPSec tunnels from Meraki MX to Prisma Access
+Dual/multi-path routing with failover and load balancing
+Site-to-site VPN to Prisma Access for secure transport to the cloud
+
+This enables a hybrid WAN architecture that combines performance optimization and security.
+
+E) Centralized Visibility, Management and Automation
+Prisma Access GUI offers centralized logging, reporting, and security policy enforcement — complementing the Meraki Dashboard which provides network-level monitoring.
+Also, both solutions provide secure API's to automate the deployment and parameters updates.
+
+## Requirements
+
 Palo Alto Prisma Access:
 1) Update your Prisma Access to version 2.1 Preferred or a later version.
 2) Migrate remote networks to the aggregate bandwidth model.
