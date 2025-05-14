@@ -71,16 +71,19 @@ Cisco Meraki
 3. Edit `pa_env.py`
 * Update the variable `X_PAN_KEY`, with the Egress Public IP Addresses API Key.
 * Example: `X_PAN_KEY = "_your_api_key__"`
+  
 ![image alt text](images/scr05.png)
 
 * Update the variable `meraki_api_key`, with the Meraki Dashboard API key.
 * Example: `meraki_api_key = "_your_api_key__"`
+  
 ![image alt text](images/scr02.png)
 ![image alt text](images/scr03.png)
 ![image alt text](images/scr04.png)
 
 * Update the variable `meraki_org_id`, with the Meraki Dashboard Organization ID.
 * Example: `meraki_org_id = "_your_org_id__"`
+
 ![image alt text](images/scr06.png)
 
 
