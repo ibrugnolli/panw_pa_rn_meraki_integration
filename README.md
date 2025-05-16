@@ -138,4 +138,5 @@ python3 pa_egress_ip.py
 python3 meraki_vpn_create_pa.py
 ```
 
-
+[![published](https://static.production.devnetcloud.com/codeexchange/assets/images/devnet-published.svg)](https://developer.cisco.com/codeexchange/github/repo/ibrugnolli/panw_pa_rn_meraki_integration)
+[![Run in Cisco Cloud IDE](https://static.production.devnetcloud.com/codeexchange/assets/images/devnet-runable-icon.svg)](https://developer.cisco.com/codeexchange/devenv/ibrugnolli/panw_pa_rn_meraki_integration/)
